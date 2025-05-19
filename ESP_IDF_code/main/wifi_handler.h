@@ -6,8 +6,8 @@
 #include "esp_log.h"
 #include "nvs_flash.h"
 
-#define WIFI_SSID      "FBIT.IoT.Router7"  //FBIT.IoT.Router1
-#define WIFI_PASSWORD  "WueLoveIoT"     //WueLoveIoT
+#define WIFI_SSID      "XX"  
+#define WIFI_PASSWORD  "XX"     
 
 #define WIFI_CONNECTED_BIT BIT0
 #define WIFI_GOT_IP_BIT    BIT1 
