@@ -95,7 +95,7 @@ static void mqtt_event_handler(void *handler_args, esp_event_base_t base, int32_
 
 esp_err_t mqtt_app_start(void) {
     esp_mqtt_client_config_t mqtt_cfg = {
-        .broker.address.uri = "mqtt://192.168.108.14:1883",
+        .broker.address.uri = "XX",
     };
 
     static_client_handle = esp_mqtt_client_init(&mqtt_cfg);
