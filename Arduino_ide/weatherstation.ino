@@ -296,7 +296,8 @@ void loop() {
           Serial.println("Errors occured");
           if(!wifi_is_connected()) {
             connectWiFi(ssid, password);
-          } else if(!mqtt_is_connected()) {
+          } 
+          if(!mqtt_is_connected()) {
             connectMQTT();
           }
         }
