@@ -57,11 +57,13 @@ This project relies on several open-source libraries to enable sensor communicat
    * Link: [https://www.cplusplus.com/reference/ctime/](https://www.cplusplus.com/reference/ctime/)
 
 10. ESP-IDF Framework
+
    * Description: ESP-IDF is the official development framework for the ESP32 chip by Espressif Systems.
    * License: Apache License 2.0
    * Source: https://github.com/espressif/esp-idf
 
 11. Apache License 2.0
+
    * https://www.apache.org/licenses/LICENSE-2.0
 
 Notes
