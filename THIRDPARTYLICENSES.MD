@@ -58,7 +58,7 @@ This project relies on several open-source libraries to enable sensor communicat
 
 10. ESP-IDF Framework
 
-   * Description: ESP-IDF is the official development framework for the ESP32 chip by Espressif Systems.
+   ** Description: ESP-IDF is the official development framework for the ESP32 chip by Espressif Systems.
    * License: Apache License 2.0
    * Source: https://github.com/espressif/esp-idf
 
