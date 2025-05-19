@@ -31,8 +31,8 @@ const char* mqtt_server = "xxx"; //insert the mqtt broker adress here
 const char* mqtt_user = "";
 const char* mqtt_pass = "";
 const int mqtt_port = 1883; //insert the port for the mqtt here
-const char* mqtt_sub_topic = "xx"; //insert the Topic for publishment here
-
+const char* mqtt_sub_topic = "xx"; //insert the Topic for subsription here
+const char* mqtt_pub_topic = "xx"; //insert the Topic for publishment here
 // --- Weitere Metadaten ---
 String location = "xx"; //insert the Location in Long format here
 const char* locationShort = "xx"; //insert the location in short here
@@ -224,7 +224,7 @@ void mqtt_send_data(bme280_data_readout data, String timestring) {
   snprintf(payload, sizeof(payload),
            "{\"location\": \"%s\", \"temp\": %.2f, \"hum\": %.2f, \"pressure\": %.2f, \"time\": \"%s\", \"esp_id\": \"%s\"}",
            locationShort, data.temp, data.hum, data.press, timestring.c_str(), esp_id);
-  client.publish("Wuerzburg2/KOS/A105/data", payload);
+  client.publish(mqtt_pub_topic, payload);
 
   Serial.println("MQTT Payload:");
   Serial.println(payload);
