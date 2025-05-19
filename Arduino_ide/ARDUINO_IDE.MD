@@ -18,7 +18,7 @@ Features
 * 128x64 OLED Display (SSD1306, I2C)
 * Jumper wires, breadboard (optional for prototyping)
 
-🔌 Wiring
+# Wiring
 
 | Component  | ESP32 Pin |
 | ---------- | --------- |
@@ -37,13 +37,13 @@ Features
 * time.h — time synchronization with NTP
 * ArduinoJson.h — JSON encoding of sensor data
 
-🌐 MQTT Configuration
+# MQTT Configuration
 
 * Broker IP: 192.168.108.14
 * Port: 1883
 * Topic: Wuerzburg2/KOS/A105/data
 
-📍 Metadata Configuration
+# Metadata Configuration
 
 * Device ID: esp2
 * Location: Mariehamn, Åland (locationShort: "Mariehamn")
@@ -85,7 +85,7 @@ The ESP32 enters deep sleep for 5 minutes after each successful sensor read and 
 * The BME280 sensor uses I2C address 0x76 by default
 * Uses retries and reconnection logic for stable MQTT and Wi-Fi operation
 
-📚 License
+# License
 
 for licensing please view the top directory and the including LICENSE.MD and THIRDPARTY.MD
 
